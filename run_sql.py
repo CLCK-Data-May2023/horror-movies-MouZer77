@@ -68,6 +68,7 @@ def get_sql(file_path: str) -> str:
 
 def main() -> None:
     path_to_db, path_to_sql, path_to_csv = get_paths()
+
     conn = create_connection(path_to_db)
     sql = get_sql(path_to_sql)
     
